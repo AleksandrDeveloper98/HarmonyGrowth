@@ -1,0 +1,45 @@
+.footer {
+  background-color: var(--color-gray-dark);
+  color: var(--color-gray-400);
+  font-size: 16px;
+
+  &__inner {
+    padding-block: var(--section-padding-block);
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid var(--color-gray-light);
+    gap: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__body-wrapper,
+  &__info,
+  &__list {
+    display: grid;
+    row-gap: 10px;
+  }
+
+  &__link {
+    color: var(--color-gray-400);
+
+    @include hover {
+      color: var(--color-white);
+    }
+  }
+
+  &__title {
+    color: var(--color-white);
+  }
+
+  &__extra {
+    text-align: center;
+  }
+}

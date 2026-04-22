@@ -1,0 +1,46 @@
+.hero {
+  background-color: var(--color-pink-50);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-block: var(--section-padding-block);
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__title {
+    background: var(--color-gradient-base);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    border-radius: 25px;
+    width: fluid(700, 400);
+    object-fit: cover;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+}

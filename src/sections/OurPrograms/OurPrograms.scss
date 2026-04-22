@@ -1,0 +1,12 @@
+.our-programs {
+  --columns: 2;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 20px;
+
+    @include mobile {
+      --columns: 1;
+    }
+  }
+}

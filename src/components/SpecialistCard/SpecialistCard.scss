@@ -1,0 +1,41 @@
+.specialist-card {
+  display: flex;
+  align-items: center;  
+  gap: 40px;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  &__image {
+    border-radius: 20px;
+  }
+
+  &__body {
+    display: grid;
+    row-gap: 20px;
+  }
+
+  &__name {
+    color: var(--color-violet);
+    @include fluid-text(27, 20);
+    color: var(--color-violet);
+    font-weight: 500;
+  }
+
+  &__list {
+    display: grid;
+    row-gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    .icon {
+      color: var(--color-violet);
+      flex-shrink: 0;
+    }
+  }
+}

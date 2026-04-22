@@ -1,0 +1,31 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 16px;
+  color: var(--color-white);
+  background: var(--color-gradient-base);
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  &--transparent {
+    background: transparent;
+    border: var(--border);
+    color: var(--color-violet);
+
+    @include hover {
+      opacity: 1;
+      border-color: var(--color-violet);
+    }
+  }
+
+  &--border-radius-10{
+    border-radius: 10px;
+  }
+}

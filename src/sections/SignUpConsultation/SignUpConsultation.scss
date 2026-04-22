@@ -1,0 +1,45 @@
+.sign-up-consultation {
+  display: grid;
+  grid-template-columns: 1fr 45%;
+  gap: 30px;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-rows: 1fr 40%;
+    row-gap: 30px;
+
+    @include mobile {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__info {
+    display: grid;
+    row-gap: 10px;
+    border: var(--border-gray-light);
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  &__schedule {
+    display: grid;
+
+    background-image: var(--color-gradient-base);
+    padding: 30px;
+    border-radius: 20px;
+    color: var(--color-white);
+
+    &-title {
+      color: var(--color-white);
+    }
+
+    &-wrapper {
+      display: grid;
+    }
+  }
+}

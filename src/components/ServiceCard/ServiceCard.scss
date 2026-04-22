@@ -1,0 +1,48 @@
+.service-card {
+  display: grid;
+  align-items: start;
+  background-color: var(--color-pink-50);
+  padding: 20px;
+  border-radius: 15px;
+  row-gap: 20px;
+  height: 100%;
+  border: 2px solid transparent;
+
+  @include hover {
+    border: var(--border);
+    box-shadow: 0px 12px 30px -8px rgb(192, 190, 190);
+  }
+
+  &__wrapper-image {
+    @include flex-center;
+    @include square(55px);
+    background-image: var(--color-gradient-base);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  &__image {
+    color: var(--color-white);
+  }
+
+  &__list {
+    display: grid;
+    row-gap: 10px;
+  }
+
+  &__item {
+    position: relative; 
+    padding-left: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%; 
+      transform: translateY(-50%);
+      @include square(7px);
+      border-radius: 50%;
+      background-color: var(--color-violet);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.working-methods {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  &__image {
+    border-radius: 20px;
+  }
+
+  &__list {
+    display: grid;
+    row-gap: 20px;
+  }
+}

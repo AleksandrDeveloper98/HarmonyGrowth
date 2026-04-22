@@ -1,0 +1,57 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-violet: oklch(0.627 0.265 303.9);
+  --color-pink: oklch(0.656 0.241 354.308);
+  --color-pink-50: oklch(97.1% 0.014 343.198);
+  --color-pink-100: oklch(94.8% 0.028 342.258);
+  --color-purple-200: oklch(90.2% 0.063 306.703);
+  --color-gray: oklch(37.3% 0.034 259.733);
+  --color-gray-400: oklch(70.7% .022 261.325);
+  --color-gray-light: oklch(70.199% 0.00193 248.793);
+  --color-gray-dark: oklch(21% 0.034 264.665);
+  --color-gray-light-alt: oklch(95.815% 0.00011 271.152);
+
+  --color-gradient-base: linear-gradient(
+    to right bottom,
+    var(--color-violet) 0%,
+    var(--color-pink) 100%
+  );
+
+  --color-gradient-alt: linear-gradient(
+    to right bottom,
+    oklch(0.977 0.014 308.299) 0%,
+    oklch(0.971 0.014 343.198) 100%
+  );
+
+  --color-accent: #e50000;
+
+  --border: 2px solid var(--color-purple-200);
+  --border-gray-light: 1px solid var(--color-gray-light);
+
+  --border-width-xl: 6px;
+  --border-width-l: 4px;
+  --border-width-m: 3px;
+  --border-width-s: 1px;
+
+  --border-radius-l: 12px;
+  --border-radius-m: 10px;
+  --border-radius: 8px;
+  --border-radius-xs: 6px;
+  --border-radius-xxs: 5px;
+  --border-radius-xxxs: 4px;
+
+  --font-family-base: 'Urbanist', sans-serif;
+
+  --container-width: #{fluid-to-laptop(
+      $container-desktop-width,
+      $container-laptop-width
+    )};
+  --container-padding-x: 16px;
+
+  --section-padding-y: #{fluid(40, 20)};
+  --section-padding-block: 50px;
+
+  --transition-duration: 0.2s;
+}

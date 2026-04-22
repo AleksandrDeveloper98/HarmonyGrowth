@@ -1,0 +1,10 @@
+.sign-up-form {
+  background-image: var(--color-gradient-alt);
+  border-radius: 20px;
+
+  &__form {
+    display: grid;
+    row-gap: 20px;
+    padding: 20px;
+  }
+}

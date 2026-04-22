@@ -1,0 +1,41 @@
+.contact-information {
+  &__list {
+    display: grid;
+    row-gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__wrapper-icon {
+    @include flex-center;
+    border-radius: 10px;
+    background-color: var(--color-pink-100);
+    padding: 10px;
+  }
+
+  &__icon {
+    color: var(--color-violet);
+  }
+
+  &__wrapper {
+    display: grid;
+    row-gap: 5px;
+  }
+
+  &__key {
+    color: var(--color-gray-light);
+    font-size: 16px;
+  }
+
+  &__link {
+    color: var(--color-black);
+
+    @include hover{
+        opacity: 0.7;
+    }
+  }
+}
