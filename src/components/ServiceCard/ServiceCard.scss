@@ -7,6 +7,7 @@
   row-gap: 20px;
   height: 100%;
   border: 2px solid transparent;
+  color: var(--color-gray);
 
   @include hover {
     border: var(--border);
@@ -31,14 +32,14 @@
   }
 
   &__item {
-    position: relative; 
+    position: relative;
     padding-left: 20px;
 
     &::before {
       content: '';
       position: absolute;
       left: 0;
-      top: 50%; 
+      top: 50%;
       transform: translateY(-50%);
       @include square(7px);
       border-radius: 50%;

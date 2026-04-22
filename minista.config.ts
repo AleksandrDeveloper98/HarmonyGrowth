@@ -9,7 +9,10 @@ export default defineConfig({
   root: '',
 
   // Базовый путь (если деплой не в корень сайта, поменяй)
-  base: '/HarmonyGrowth/',
+  base:
+    process.env.NODE_ENV === 'production'
+      ? '/HarmonyGrowth/' // на GitHub Pages
+      : '/',
 
   // Папка с публичными файлами (копируются как есть)
   public: 'public',
