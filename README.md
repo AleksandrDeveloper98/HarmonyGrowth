@@ -19,4 +19,4 @@
 - ✅ Семантическая верстка
 
 ## 🌐 Демо
-Проект доступен по ссылке: [https://aleksandrdeveloper98.github.io/stream-vibe/](https://aleksandrdeveloper98.github.io/HarmonyGrowth/)
+Проект доступен по ссылке: [https://aleksandrdeveloper98.github.io/HarmonyGrowth/](https://aleksandrdeveloper98.github.io/HarmonyGrowth/)
