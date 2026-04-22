@@ -1,8 +1,5 @@
 export const menuItems = [
-  {
-    label: 'Home',
-    href: '#home',
-  },
+
   {
     label: 'О Центре',
     href: '#about-center',
